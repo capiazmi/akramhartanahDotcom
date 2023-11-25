@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="home">
+          <img
+            src="{{ page.profile_picture.src | absolute_url }}"
+            alt="{{ page.profile_picture.alt }}"
+            class="profile-pic"
+          />
+
+          {{ content }}
+          <br>
+          <img src=assets/img/akram-header.jpg alt="Hubungi saya">
+          <br>
+          <div style="text-align: center;"><br><h1>Pencapaian Saya</h1>
+            <img src=assets/img/achivement.jpg alt="Hubungi saya">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>

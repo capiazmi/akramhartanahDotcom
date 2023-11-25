@@ -1,0 +1,9 @@
+    - name: Home
+      slug: /
+    - name: Semak Nilai
+      slug: semaknilai
+    - name: Beli / Sewa
+      slug: pembeli
+    - name: Jual / Sewa
+      slug: penjual
+    #- name: Work

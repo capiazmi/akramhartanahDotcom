@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   
+
+    
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>Isikan di bawah untuk lakukan semakan</legend>
+            
+            <label for="nama">Nama:</label><br><input type="text" name="nama" id="nama"><br>
+            <label for="notel">No telefon:</label><br><input type="tel" name="notel" id="notel"><br>
+            <label for="alamat">Alamat Hartanah:</label><br><textarea name="alamat" id="alamat"></textarea><br>
+            <label for="jenis">Jenis Hartanah:</label><br>
+            <select name="jenis" id="jenis">
+                <option value="Rumah Banglo">Rumah Banglo</option>
+                <option value="Banglo Link">Banglo Link</option>
+                <option value="Banglo Zero-Lot">Banglo Zero-Lot</option>
+                <option value="Rumah Berkembar">Rumah Berkembar</option>
+                <option value="Rumah Kluster">Rumah Kluster</option>
+                <option value="Rumah teres">Rumah teres</option>
+                <option value="Rumah Teres 1 tingkat">Rumah Teres 1 tingkat</option>
+                <option value="Rumah Teres 1.5 tingkat">Rumah Teres 1.5 tingkat</option>
+                <option value="Rumah Teres 2 tingkat">Rumah Teres 2 tingkat</option>
+                <option value="Rumah Teres 2.5 tingkat">Rumah Teres 2.5 tingkat</option>
+                <option value="Rumah Teres 3 tingkat">Rumah Teres 3 tingkat</option>
+                <option value="Rumah Teres 3.5 tingkat">Rumah Teres 3.5 tingkat</option>
+                <option value="Rumah Bandar">Rumah Bandar</option>
+                <option value="Vila Halaman Berkembar">Vila Halaman Berkembar</option>
+                <option value="Lain - lain">Lain - lain</option>
+            </select><br>
+            <label for="luas">Luas Tanah:</label><br><input type="text" name="luas" id="luas"><br>
+            <label for="bangunan">Luas Bangunan:</label><br><input type="text" name="bangunan" id="bangunan"><br>
+            <label for="status">Status Hartanah:</label><br>
+            <select name="status" id="status">
+                <option value="Freehold">Freehold</option>
+                <option value="Leasehold">Leasehold</option>
+                <option value="Freehold Malay Reserve">Freehold Malay Reserve</option></select><br>
+            <input type="submit" value="Hantarkan ke Whatsapp" onclick="genURL(); return false;">
+            </fieldset>
+            </form>
+            
+          
+        </div>
+      </div>
+    </div>
+    <script>
+        function genURL() {
+            var nama = "Nama: " + document.getElementById("nama").value;
+            var notel = "Tel: " + document.getElementById("notel").value;
+            var alamat = "Alamat: " + document.getElementById("alamat").value;
+            var jenis = "Jenis: " + document.getElementById("jenis").value;
+            var luas = "Luas: " + document.getElementById("luas").value;
+            var bangunan = "Bangunan: " + document.getElementById("bangunan").value;
+            var status = "Status: " + document.getElementById("status").value;
+            window.location.href = "https://wa.me/60199662218?text=Saya nak semak nilai hartanah:%0A"+encodeURI(nama)+"%0A"+encodeURI(notel)+"%0A"+encodeURI(alamat)+"%0A"+encodeURI(jenis)+"%0A"+encodeURI(luas)+"%0A"+encodeURI(bangunan)+"%0A"+encodeURI(status);
+        } </script>
+    {% include footer.html %}
+
+    {% include foot.html %}
+    
+  </body>
+</html>

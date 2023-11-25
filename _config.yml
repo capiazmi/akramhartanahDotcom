@@ -1,0 +1,51 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Akram | REN33531
+description: >- # this means to ignore newlines until "baseurl:"
+  Akram Hartanah, REN 33531 sedia memberikan perkhidmatan yang terbaik untuk anda
+baseurl: "/" # the subpath of the site
+url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/akram.jpg
+google_analytics: "#"
+
+collection:
+  authors:
+
+footer:
+  show_powered_by: true
+  contact:
+    - name: Email
+      value: akaramkatana@gmail.com
+      link: mailto:akaramkatana@gmail.com
+    - name: Whatsapp
+      value: +6019-9662218
+      link: "https://wa.me/60199662218?text=Saya%20ingin%20mengetahui%20tentang%20hartanah"
+  follow:
+    - name: Mudah.my
+      link: https://www.mudah.my/akram-hartanah
+    - name: Tiktok
+      link: https://tiktok.com/@akramhartanah
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1
