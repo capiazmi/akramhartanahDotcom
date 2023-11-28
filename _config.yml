@@ -5,7 +5,7 @@ title: Akram | REN33531
 description: >- # this means to ignore newlines until "baseurl:"
   Akram Hartanah, REN 33531 sedia memberikan perkhidmatan yang terbaik untuk anda
 baseurl: "/" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+url: "https://akramhartanah.com" # the base hostname & protocol for the site
 og_image: /assets/img/akram.jpg
 google_analytics: "#"
 
